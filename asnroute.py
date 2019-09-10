@@ -1,4 +1,4 @@
-from scapy.all import *
+from scapy.all import (sr, IP, TCP)
 from datetime import datetime
 import sys
 import requests
@@ -6,6 +6,7 @@ import json
 
 
 API_KEY = "ce96c02f576e0387c4d4297b25c93f91"
+
 
 class ASNRouteClient():
 
@@ -92,6 +93,7 @@ class ASNRouteClient():
             )
 
         print(json.dumps(results, indent=4))
+
 
 if __name__ == "__main__":
 
